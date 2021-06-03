@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link CSS and Bootstrap -->
+    <link rel="stylesheet" href="main.css">
+    <title>Crypto Price</title>
+</head>
+<body style="margin: 0%;">
+    <section class="container">
+        <div id="header">
+        <h1 id="heading">Crypto Check</h1>
+        </div>
+        <div id="alert-message">
+            <h3>Data loading failed. Please click refresh to load again</h3>
+            <a id="btn-refresh" onclick="window.location.reload(true)">Refresh</a>
+        </div>
+        <div id="searchWrapper">
+            <input
+                type="text"
+                name="searchBar"
+                id="searchBar"
+                placeholder="Search Crypto"
+            />
+        </div>
+        <div id="coinList"></div>
+    </section>
+    <script src="API.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
